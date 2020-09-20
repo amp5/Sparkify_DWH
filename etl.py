@@ -23,9 +23,7 @@ def main():
     cur = conn.cursor()
 
     load_staging_tables(cur, conn)
-    print("loading staging tables complete")
     insert_tables(cur, conn)
-    print("inserting tables commplete")
 
     conn.close()
 
